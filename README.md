@@ -2,11 +2,6 @@
 
 A Full Stack monitoring system for visualizing real-time AWS EC2 CPU usage, featuring an interactive Angular frontend, a robust Spring Boot backend, and full Docker packaging for easy deployment.
 
-<a href="https://cpu-monitor-app.runmydocker-app.com/" target="_blank">
-  <img src="https://img.shields.io/badge/🌐 View Live Demo-blue?style=for-the-badge" alt="Live Demo" />
-</a>
-
-
 ---
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
@@ -23,6 +18,15 @@ A Full Stack monitoring system for visualizing real-time AWS EC2 CPU usage, feat
 ## 📌 Project Overview
 
 This application allows users to monitor the CPU utilization of a specific AWS EC2 instance over time. The user provides the instance's IP address, a time range, and a sampling interval, and the system displays a live graph based on data pulled from AWS CloudWatch.
+
+## 🌐 Live Demo
+
+<a href="https://cpu-monitor-app.runmydocker-app.com/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐 View Live Demo-blue?style=for-the-badge" alt="Live Demo" />
+</a>
+
+You can test the app live — no setup required! Hosted instantly via RunMyDocker with a public URL linked to the containerized app.
+
 
 ---
 
