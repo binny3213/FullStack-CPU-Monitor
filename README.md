@@ -4,6 +4,17 @@ A Full Stack monitoring system for visualizing real-time AWS EC2 CPU usage, feat
 
 ---
 
+![Java](https://img.shields.io/badge/Java-17-blue)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.0-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-3.9.9-red)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![Swagger](https://img.shields.io/badge/Swagger-Enabled-yellowgreen)
+![Angular](https://img.shields.io/badge/Angular-17.3.0-red)
+![Chart.js](https://img.shields.io/badge/Chart.js-4.4.9-yellowgreen)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38b2ac)
+
+---
+
 ## 📌 Project Overview
 
 This application allows users to monitor the CPU utilization of a specific AWS EC2 instance over time. The user provides the instance's IP address, a time range, and a sampling interval, and the system displays a live graph based on data pulled from AWS CloudWatch.
