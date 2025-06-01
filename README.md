@@ -30,6 +30,24 @@ You can test the app live — no setup required! Hosted instantly via RunMyDocke
 
 ---
 
+<h2>🎥 Technical Walkthrough Video</h2>
+
+<p>
+For a full explanation of the system architecture, development process, and a live demonstration of the application in action, you can watch the following video:
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=-VVB8LT43m4&ab_channel=binnyschriger" target="_blank">
+▶️ Watch on YouTube
+</a>
+</p>
+
+<p>
+In this video, I walk through the backend and frontend structure, explain how the integration with AWS CloudWatch works, and demonstrate how data is visualized on the dashboard in real time.
+</p>
+
+---
+
 ## 🧱 Architecture
 
 - **Frontend**: Built using [Angular](https://angular.io/) and styled with [Tailwind CSS](https://tailwindcss.com/).
