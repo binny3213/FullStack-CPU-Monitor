@@ -28,8 +28,6 @@ This application allows users to monitor the CPU utilization of a specific AWS E
 You can test the app live — no setup required! Hosted instantly via RunMyDocker with a public URL linked to the containerized app.
 
 
----
-
 <h2>🎥 Technical Walkthrough Video</h2>
 
 <p>
