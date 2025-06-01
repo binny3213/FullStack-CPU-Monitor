@@ -1,0 +1,53 @@
+<body class="bg-blue-50 min-h-screen">
+  <div class="max-w-4xl mx-auto px-4 py-6">
+    <h1 class="text-3xl font-bold mb-6 text-center text-blue-800">
+      AWS Instance CPU Usage
+    </h1>
+
+    <form (ngSubmit)="fetchCpuData()" class="space-y-4 bg-blue-100 shadow-md rounded p-6">
+      <div>
+        <label for="timePeriod" class="block font-semibold mb-1">Time period:</label>
+        <select id="timePeriod" [(ngModel)]="selectedPeriod" name="selectedPeriod"
+                (change)="updateIntervalOptions()"
+                class="w-full border border-gray-300 bg-blue-50 rounded px-3 py-2">
+          <option value="1h">Last Hour</option>
+          <option value="6h">Last 6 Hours</option>
+          <option value="24h">Last Day</option>
+          <option value="7d">Last Week</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="interval" class="block font-semibold mb-1">Period:</label>
+        <select id="interval" [(ngModel)]="interval" name="interval"
+                class="w-full border border-gray-300 bg-blue-50 rounded px-3 py-2">
+          <option *ngFor="let option of intervalOptions" [value]="option">
+            {{ getIntervalLabel(option) }}
+          </option>
+        </select>
+      </div>
+
+      <div >
+        <label for="ip" class="block font-semibold mb-1">IP Address:</label>
+        <input id="ip" [(ngModel)]="ip" placeholder="Enter AWS Instance IP" name="ip" type="text" required
+              class="w-full border border-gray-300 bg-blue-50 rounded px-3 py-2">
+      </div>
+
+      <button type="submit"
+              class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        Load
+      </button>
+      <div *ngIf="isLoading" class="loading-indicator">
+        ⏳ Loading data...
+      </div>
+    </form>
+
+    <div class="mt-10" *ngIf="!isLoading && cpuData.length" style="height: 500px;">
+      <canvas baseChart
+              [data]="lineChartData"
+              [options]="lineChartOptions"
+              [type]="'line'">
+      </canvas>
+    </div>
+  </div>
+</body>
