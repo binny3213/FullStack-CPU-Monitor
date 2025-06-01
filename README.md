@@ -42,7 +42,8 @@ You can test the app live — no setup required! Hosted instantly via RunMyDocke
 
 ## 🖼️ Tech Flow Diagram
 
-![image](https://github.com/user-attachments/assets/bb916734-7983-4bbd-b1ba-1128cae7ee99)
+![image](https://github.com/user-attachments/assets/1662ad35-8e70-40ed-a468-f142074f29c2)
+
 
 ---
 
