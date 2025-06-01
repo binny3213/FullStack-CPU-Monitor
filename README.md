@@ -2,6 +2,11 @@
 
 A Full Stack monitoring system for visualizing real-time AWS EC2 CPU usage, featuring an interactive Angular frontend, a robust Spring Boot backend, and full Docker packaging for easy deployment.
 
+<a href="https://cpu-monitor-app.runmydocker-app.com/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐 View Live Demo-blue?style=for-the-badge" alt="Live Demo" />
+</a>
+
+
 ---
 
 ![Java](https://img.shields.io/badge/Java-17-blue)
@@ -53,11 +58,84 @@ This application allows users to monitor the CPU utilization of a specific AWS E
 </div>
 
 ---
+<h2>🌍 Live Demo</h2>
 
-## 🚀 Running the App with Docker
+<p>
+You can view and interact with the full live demo of the app here:<br>
+👉 <a href="https://cpu-monitor-app.runmydocker-app.com/" target="_blank">
+https://cpu-monitor-app.runmydocker-app.com/</a>
+</p>
 
-1. Make sure you have an `.env` file with the required AWS credentials.
-2. Build the Docker image:
+<p>
+The application was deployed effortlessly using <strong>RunMyDocker</strong> – a platform that lets you:
+</p>
+<ul>
+  <li>Deploy any public Docker image</li>
+  <li>Expose a public URL for your app instantly</li>
+  <li>Test and demo full-stack applications without managing servers</li>
+</ul>
 
-```bash
-docker build -t cpu-monitor-app .
+<p><em>It's a super quick way to get your project online – just push your Docker image and go live in seconds!</em></p>
+
+---
+
+<h2>Swagger UI 📚</h2>
+<p>
+  Available at: <a href="https://cpu-monitor-app.runmydocker-app.com/swagger-ui/index.html" target="_blank">
+  🌐 https://cpu-monitor-app.runmydocker-app.com/swagger-ui/index.html</a>
+</p>
+
+<p>This interactive interface lets you test the API in real time:</p>
+<ul>
+  <li><strong>Try the</strong> <code>/monitoring/getCpuUsage</code> <strong>endpoint</strong>.</li>
+  <li>Provide query parameters like:
+    <ul>
+      <li><code>ip</code> – AWS EC2 instance IP</li>
+      <li><code>from</code>, <code>to</code> – date-time range</li>
+      <li><code>interval</code> – sample frequency</li>
+    </ul>
+  </li>
+  <li>Instantly see JSON responses from your deployed app.</li>
+</ul>
+<p><em>Perfect for demos, testing, and exploring the API without writing code.</em></p>
+
+<hr>
+
+<h2>Requirements ⚙️</h2>
+<ul>
+  <li>Java 17+</li>
+  <li>Maven 3.6+</li>
+  <li>Node.js 18+</li>
+  <li>Docker</li>
+</ul>
+
+<hr>
+
+<h2>Getting Started 🚀</h2>
+
+<h3>1. Clone the repository</h3>
+<pre><code>git clone https://github.com/binny3213/CPU-Monitor-App.git
+cd CPU-Monitor-App
+</code></pre>
+
+<h3>2. Build the Docker image</h3>
+<pre><code>docker build -t cpu-monitor-app .
+</code></pre>
+
+<h3>3. Run the app with your AWS credentials</h3>
+<p>
+The backend fetches CPU metrics from AWS CloudWatch, so you'll need valid AWS credentials:
+</p>
+<pre><code>docker run -p 8080:8080 \
+-e AWS_ACCESS_KEY_ID=your-access-key \
+-e AWS_SECRET_ACCESS_KEY=your-secret-key \
+-e AWS_REGION=us-east-1 \
+cpu-monitor-app
+</code></pre>
+
+<p>
+After launch, Swagger UI will be available locally at:<br>
+📍 <a href="http://localhost:8080/swagger-ui/index.html">http://localhost:8080/swagger-ui/index.html</a>
+</p>
+
+
