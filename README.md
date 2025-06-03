@@ -51,8 +51,7 @@ In this video, I walk through the backend and frontend structure, explain how th
 
 ## 🖼️ Tech Flow Diagram
 
-![image](https://github.com/user-attachments/assets/1662ad35-8e70-40ed-a468-f142074f29c2)
-
+![image](https://github.com/user-attachments/assets/4a549df1-297b-4a2d-80bc-c3ea64c2251d)
 
 ---
 
